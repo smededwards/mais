@@ -1,0 +1,28 @@
+{
+    "name": "smededwards/mais",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Smededwards\\Mais\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael Edwards",
+            "email": "smededwards@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.11",
+        "wp-coding-standards/wpcs": "^3.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint": "vendor/bin/phpcs .",
+        "fix": "vendor/bin/phpcbf ."
+    }
+}
